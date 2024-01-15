@@ -25,7 +25,6 @@ namespace Calling_Remote_API.Controllers
         {
             string? JSON_PLACEHOLDER_URL = _configuration.GetValue<string>("JSON_PLaceholder_URL");
             string todosUrl = "todos";
-            IEnumerable<TodoDetail> todos = new List<TodoDetail>();
 
             using (var client = new HttpClient())
             {
@@ -44,7 +43,11 @@ namespace Calling_Remote_API.Controllers
                     var readTask = response.Content.ReadAsStringAsync();
                     readTask.Wait();
                     string data = readTask.Result;
-                    todos = JsonSerializer.Deserialize<IEnumerable<TodoDetail>>(data);
+                    var options = new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true,
+                    };
+                    IEnumerable<TodoDetail> todos = JsonSerializer.Deserialize<List<TodoDetail>>(data);
                     return Ok(todos);
                 } else {
                     return StatusCode((int)response.StatusCode);
