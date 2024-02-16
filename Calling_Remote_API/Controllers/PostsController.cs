@@ -11,8 +11,8 @@ namespace Calling_Remote_API.Controllers
     [Route("api/[controller]")]
     public class PostsController : Controller
     {
-        private IConfiguration _configuration;
-        private HttpClient _client;
+        private readonly IConfiguration _configuration;
+        private readonly HttpClient _client;
         private readonly ILogger<PostsController> _logger;
 
         public PostsController(IConfiguration configuration, HttpClient client, ILogger<PostsController> logger)
