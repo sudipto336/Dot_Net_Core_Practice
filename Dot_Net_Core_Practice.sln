@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calling_Remote_API", "Calling_Remote_API\Calling_Remote_API.csproj", "{86AA538C-CF82-47FD-B154-BC85E8EBD222}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calling_Remote_API", "Calling_Remote_API\Calling_Remote_API.csproj", "{86AA538C-CF82-47FD-B154-BC85E8EBD222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagination_Filtering_Demo", "Pagination_Filtering_Demo\Pagination_Filtering_Demo.csproj", "{788CD281-3245-423C-BA77-8CE85583C663}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{86AA538C-CF82-47FD-B154-BC85E8EBD222}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86AA538C-CF82-47FD-B154-BC85E8EBD222}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86AA538C-CF82-47FD-B154-BC85E8EBD222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788CD281-3245-423C-BA77-8CE85583C663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788CD281-3245-423C-BA77-8CE85583C663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788CD281-3245-423C-BA77-8CE85583C663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788CD281-3245-423C-BA77-8CE85583C663}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,6 @@
+@Pagination_Filtering_Demo_HostAddress = http://localhost:5097
+
+GET {{Pagination_Filtering_Demo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
