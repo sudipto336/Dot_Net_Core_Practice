@@ -1,1 +1,1 @@
-Pagination and filteration are helpful to optimize API performance and handling large data set efficiently
+Pagination and filteration are helpful to optimize API performance while handling large data set
