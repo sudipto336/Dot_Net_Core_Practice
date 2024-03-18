@@ -1,1 +1,1 @@
-Versioning is used to provide seprate copies of same API to different clients according to requirements. 
+Versioning is used to provide seprate copies of same API to different clients according to requirements.
