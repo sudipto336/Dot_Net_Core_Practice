@@ -29,6 +29,7 @@ namespace Pagination_Filtering_Demo.Controllers
         }
 
         [HttpGet(Name = "GetArticles")]
+        [Route("GetArticles")]
         public IActionResult Get([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string filter = "")
         {
             var query = _articles.AsQueryable();
